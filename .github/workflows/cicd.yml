@@ -103,7 +103,7 @@ jobs:
         os: [ ubuntu-20.04, macos-12 ]
     steps:
       - uses: actions/checkout@v3
-      - uses: cachix/install-nix-action@v18
+      - uses: cachix/install-nix-action@v19
       - uses: ./
         with:
           nixbuild_ssh_key: ${{ secrets.nixbuild_ssh_key }}
