@@ -108,7 +108,7 @@ jobs:
           - macos-15
     steps:
       - uses: actions/checkout@v4
-      - uses: cachix/install-nix-action@v30
+      - uses: cachix/install-nix-action@v31
       - uses: ./
         with:
           nixbuild_token: ${{ secrets.nixbuild_token }}
